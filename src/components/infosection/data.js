@@ -39,20 +39,20 @@ export const HomeObjOne = {
 }
 export const HomeObjTwo = {
     id: 'discover',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLinetext: "eric's world",
-    headline: 'explore my world',
-    description: 'it is reall nice website. try it!!',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLinetext: "Skills Graph",
+    headline: 'Specific skills',
+    description: 'Tool List',
     buttonLabel: 'Learn more',
     imgStart: true,
     img: Image1,
     alt: 'career',
-    dark:false,
-    dark2: true,
-    primary:false,
-    darkText:true
+    dark:true,
+    dark2: false,
+    primary:true,
+    darkText:false
 }
 export const HomeObjthree = {
     id: 'Signup',

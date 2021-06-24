@@ -13,7 +13,7 @@ import {ServicesContainer,
 const Services = () => {
     return (
         <ServicesContainer id='services'>
-            <ServicesH1>our services</ServicesH1>
+            <ServicesH1>Eric's Projects</ServicesH1>
             <ServicesWrapper>
             <ServicesCard>
                 <ServicesIcon src={icon1}/>
@@ -24,6 +24,21 @@ const Services = () => {
             <ServicesIcon src={icon2}/>
             <ServicesH2>i can do it</ServicesH2>
             <ServicesP>lodasdasda</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+        <ServicesIcon src={icon3}/>
+        <ServicesH2>premium benefts</ServicesH2>
+        <ServicesP>lodasdasda</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+        <ServicesIcon src={icon3}/>
+        <ServicesH2>premium benefts</ServicesH2>
+        <ServicesP>lodasdasda</ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+        <ServicesIcon src={icon3}/>
+        <ServicesH2>premium benefts</ServicesH2>
+        <ServicesP>lodasdasda</ServicesP>
         </ServicesCard>
         <ServicesCard>
         <ServicesIcon src={icon3}/>

@@ -9,6 +9,7 @@ import Services from '../components/services'
 import Footer from '../components/footer'
 import Intro from '../components/intro'
 import Skills from '../components/skills'
+import SkillsGraph from '../components/skillsgraph'
 
 const Home = () => {
   const [isOpen, setisOpen] = useState(false)
@@ -36,12 +37,8 @@ const Home = () => {
       <HeroSection ScrollYvalue={ScrollYvalue}/>
       <Intro {...introObjOne}/>
       <Skills {...HomeObjTwo}/>
-      <InfoSection ScrollYvalue={ScrollYvalue} {...HomeObjOne}/>
-      <InfoSection {...HomeObjTwo}/>
-      <InfoSection {...HomeObjthree}/>
-      <InfoSection {...HomeObjTwo}/>
+      <SkillsGraph {...HomeObjTwo}/>
       <Services/>
-      <InfoSection {...HomeObjthree}/>
       <Footer/>
     </Router>
   )
