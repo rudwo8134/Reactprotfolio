@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Reactprotfolio/static/css/main.409b94e9.chunk.css",
-    "main.js": "/Reactprotfolio/static/js/main.a80aa7d7.chunk.js",
-    "main.js.map": "/Reactprotfolio/static/js/main.a80aa7d7.chunk.js.map",
+    "main.js": "/Reactprotfolio/static/js/main.8ad2a996.chunk.js",
+    "main.js.map": "/Reactprotfolio/static/js/main.8ad2a996.chunk.js.map",
     "runtime-main.js": "/Reactprotfolio/static/js/runtime-main.2ed31216.js",
     "runtime-main.js.map": "/Reactprotfolio/static/js/runtime-main.2ed31216.js.map",
-    "static/js/2.f16efd52.chunk.js": "/Reactprotfolio/static/js/2.f16efd52.chunk.js",
-    "static/js/2.f16efd52.chunk.js.map": "/Reactprotfolio/static/js/2.f16efd52.chunk.js.map",
+    "static/js/2.7f837607.chunk.js": "/Reactprotfolio/static/js/2.7f837607.chunk.js",
+    "static/js/2.7f837607.chunk.js.map": "/Reactprotfolio/static/js/2.7f837607.chunk.js.map",
     "index.html": "/Reactprotfolio/index.html",
     "static/css/main.409b94e9.chunk.css.map": "/Reactprotfolio/static/css/main.409b94e9.chunk.css.map",
-    "static/js/2.f16efd52.chunk.js.LICENSE.txt": "/Reactprotfolio/static/js/2.f16efd52.chunk.js.LICENSE.txt",
+    "static/js/2.7f837607.chunk.js.LICENSE.txt": "/Reactprotfolio/static/js/2.7f837607.chunk.js.LICENSE.txt",
     "static/media/1-1.754f5b08.svg": "/Reactprotfolio/static/media/1-1.754f5b08.svg",
     "static/media/1-2.aee9cb1e.svg": "/Reactprotfolio/static/media/1-2.aee9cb1e.svg",
     "static/media/1-4.e4b723af.svg": "/Reactprotfolio/static/media/1-4.e4b723af.svg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2ed31216.js",
-    "static/js/2.f16efd52.chunk.js",
+    "static/js/2.7f837607.chunk.js",
     "static/css/main.409b94e9.chunk.css",
-    "static/js/main.a80aa7d7.chunk.js"
+    "static/js/main.8ad2a996.chunk.js"
   ]
 }
