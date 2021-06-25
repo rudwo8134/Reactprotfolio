@@ -25,10 +25,8 @@ import {Button} from '../ButtonElement'
 
 
 const Intro = (props) => {
-    const {dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline,darkText,description,buttonLabel,img,alt} = props
+    const {dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline,darkText,description,img,alt} = props
     const [clickpop,setclickpop] = useState(false)
-    const {ScrollYvalue} = props
-    console.log(ScrollYvalue)
     const handlebutton = () =>{
         setclickpop(!clickpop)
     }

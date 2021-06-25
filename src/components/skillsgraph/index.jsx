@@ -2,23 +2,21 @@ import Progressbar from '../progressbar/index'
 import React,{useEffect} from 'react'
 import 'aos/dist/aos.css'
 import Aos from 'aos'
-import { Column2, Img, ImgWrap,InfoContainer,
+import { Column2,InfoContainer,
   InfoWrapper,
   InfoRow,
   Column1,
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
-  BtnWrap,
   ProgressbarWrapper,
   SKilllist,
   Skills
 } from './skillsgraph'
-import {Button} from '../ButtonElement'
 
 
-const InfoSection = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline,darkText,description,buttonLabel,img,alt}) => {
+
+const InfoSection = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline}) => {
   useEffect(()=>{
     Aos.init({
         duration:2000

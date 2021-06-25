@@ -1,5 +1,4 @@
-import React,{useState,useEffect} from 'react'
-
+import React,{useState} from 'react'
 
 
 import {
@@ -7,7 +6,9 @@ import {
     ServicesIcon,
     ServicesH2,
     ServicesP,
-    Coverpage
+    Coverpage,
+    All,
+    Linktag
 } from './portfolio.jsx'
 
 const Portfoliobanner = ({title,skill,img,url}) => {
@@ -18,19 +19,25 @@ const Portfoliobanner = ({title,skill,img,url}) => {
     const handleleave = ()=>{
         setenter(false)
     }
+  
 
     return (
-        <all>
+        <All>
         <ServicesCard enter={enter} onMouseLeave={handleleave} onMouseEnter={handleenter}>
                 <ServicesIcon enter={enter} src={img}/>
-                <ServicesH2 enter={enter}>{title}</ServicesH2>
-                <ServicesP enter={enter}>{skill}</ServicesP>
-                {enter && <Coverpage>
-                    Let's Watch<br></br>
-                    {title}<br></br>
-                    </Coverpage>}
+                <ServicesH2 enter={enter}>{title && title}</ServicesH2>
+                <ServicesP enter={enter}>{skill && skill}</ServicesP>
+                {enter && 
+                
+                <Linktag href={url} target='_blank'>
+                <Coverpage>
+                Let's Watch<br></br>
+                {title && title}<br></br>
+                </Coverpage>
+                </Linktag>
+            }
         </ServicesCard>
-        </all>
+        </All>
     )
 }
 

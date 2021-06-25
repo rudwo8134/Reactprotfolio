@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const all = styled.body`
-background:red;
+export const All = styled.body`
+`
+export const Linktag = styled.a`
 `
 
 export const ServicesCard = styled.div`
@@ -61,7 +62,7 @@ color: #fff;
     opacity: ${({enter})=>(enter ? '0.1': '1')};
     transition: all 0.5s ease-in-out;
 `
-export const Coverpage = styled.div`
+export const Coverpage = styled.p`
     position: absolute;
     top:0;
     left:0;
@@ -71,6 +72,7 @@ export const Coverpage = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color:#010101;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;

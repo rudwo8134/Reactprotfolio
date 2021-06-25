@@ -10,7 +10,6 @@ import {ServicesContainer,
     Buttoncontainer,
     Buttonlogo,
     TotalProject,
-    Linktag
 
 
 } from './serviceelement'
@@ -54,7 +53,7 @@ const Services = () => {
             data-aos-easing="ease-out-cubic">
             {show.map(data=>{
                 return(
-                    <Linktag href={data.url} target="_blank"><Portfoliobanner key={data.title} {...data}></Portfoliobanner></Linktag>
+                   <Portfoliobanner key={data.title} {...data}></Portfoliobanner>
                 )
             })}
             </ServicesWrapper>
