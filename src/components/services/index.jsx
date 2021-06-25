@@ -1,50 +1,49 @@
-import React from 'react'
-import icon1 from '../../images/1-4.svg'
-import icon2 from '../../images/1-5.svg'
-import icon3 from '../../images/1-6.svg'
+import React,{useState,useEffect} from 'react'
+import Portfoliobanner from '../Portfoliobanner/index'
+import {Project1} from './data'
+
 import {ServicesContainer,
     ServicesH1,
     ServicesWrapper,
-    ServicesCard,
-    ServicesIcon,
-    ServicesH2,
-    ServicesP
+    Buttoncontainer,
+    Buttonlogo,
+    TotalProject
+
+
 } from './serviceelement'
+
+
+
+
 const Services = () => {
-    return (
+    const [show,setshow] =useState(Project1)
+    const [active,setactive] = useState()
+
+    const handleclick = (e) =>{
+        if(e.target.name ==='all') {
+            setshow(Project1)
+        }else{
+            setshow(Project1.filter(li=>li.type.match(`${e.target.name}`)))
+        }
+        setactive(e.target.name)
+    }
+
+   
+   return (
         <ServicesContainer id='services'>
-            <ServicesH1>Eric's Projects</ServicesH1>
+            <ServicesH1 >Eric's Projects<TotalProject>{show.length}</TotalProject></ServicesH1>
+            <Buttoncontainer>
+            <Buttonlogo className={active === 'all' && 'active'}   name='all' onClick={handleclick}>All</Buttonlogo>
+            <Buttonlogo className={active === 'react' && 'active'}  key='2' name='react' onClick={handleclick}>React</Buttonlogo>
+            <Buttonlogo className={active === 'html' && 'active'}  key='3' name='html' onClick={handleclick}>HTML</Buttonlogo>
+            <Buttonlogo  className={active === 'backend' && 'active'}  key='4' name='backend' onClick={handleclick}>Backend</Buttonlogo>
+            </Buttoncontainer>
             <ServicesWrapper>
-            <ServicesCard>
-                <ServicesIcon src={icon1}/>
-                <ServicesH2>it is my job</ServicesH2>
-                <ServicesP>lodasdasda</ServicesP>
-            </ServicesCard>
-            <ServicesCard>
-            <ServicesIcon src={icon2}/>
-            <ServicesH2>i can do it</ServicesH2>
-            <ServicesP>lodasdasda</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-        <ServicesIcon src={icon3}/>
-        <ServicesH2>premium benefts</ServicesH2>
-        <ServicesP>lodasdasda</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-        <ServicesIcon src={icon3}/>
-        <ServicesH2>premium benefts</ServicesH2>
-        <ServicesP>lodasdasda</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-        <ServicesIcon src={icon3}/>
-        <ServicesH2>premium benefts</ServicesH2>
-        <ServicesP>lodasdasda</ServicesP>
-        </ServicesCard>
-        <ServicesCard>
-        <ServicesIcon src={icon3}/>
-        <ServicesH2>premium benefts</ServicesH2>
-        <ServicesP>lodasdasda</ServicesP>
-        </ServicesCard>
+            {show.map(data=>{
+                return(
+                    <Portfoliobanner key={data.title} {...data}></Portfoliobanner>
+                )
+            })}
             </ServicesWrapper>
         </ServicesContainer>
     )

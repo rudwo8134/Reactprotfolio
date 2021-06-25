@@ -22,7 +22,6 @@ const HeroSection = ({ScrollYvalue}) => {
     setHover(!hover)
   }
  
-  console.log(ScrollYvalue)
   return (
     <HeroContainer>
       <HeroBg scroll={ScrollYvalue}>

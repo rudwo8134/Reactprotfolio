@@ -10,6 +10,7 @@ import Footer from '../components/footer'
 import Intro from '../components/intro'
 import Skills from '../components/skills'
 import SkillsGraph from '../components/skillsgraph'
+import Testmonials from '../components/testmonials'
 
 const Home = () => {
   const [isOpen, setisOpen] = useState(false)
@@ -35,10 +36,11 @@ const Home = () => {
       <Navbar toggle={toggle}/>
       <Sidabar isOpen={isOpen} toggle={toggle}/>
       <HeroSection ScrollYvalue={ScrollYvalue}/>
-      <Intro {...introObjOne}/>
-      <Skills {...HomeObjTwo}/>
-      <SkillsGraph {...HomeObjTwo}/>
-      <Services/>
+      <Intro ScrollYvalue={ScrollYvalue} {...introObjOne}/>
+      <Skills ScrollYvalue={ScrollYvalue} {...HomeObjTwo}/>
+      <SkillsGraph ScrollYvalue={ScrollYvalue} {...HomeObjTwo}/>
+      <Services ScrollYvalue={ScrollYvalue} />
+      <Testmonials ScrollYvalue={ScrollYvalue} {...HomeObjTwo}/>
       <Footer/>
     </Router>
   )

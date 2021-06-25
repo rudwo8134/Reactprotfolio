@@ -100,6 +100,7 @@ export const ImgWrap = styled.div`
     transition: all 1s ease-in-out;
     &:hover{
         img{
+         
             transform:scale(1.2);
             filter:grayscale(60%);
             transition: all 1s ease-in-out;
@@ -111,6 +112,7 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     filter: grayscale(90%);
+    border-radius: 50%;
 `
 export const Detaildiv = styled.div`
     background: #444;
