@@ -12,6 +12,7 @@ export const InfoContainer = styled.div`
         padding: 100px 0;
     }
     position: relative;
+    
 `
 export const InfoWrapper = styled.div `
     display: grid;
@@ -23,6 +24,8 @@ export const InfoWrapper = styled.div `
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+
 `
 export const InfoRow = styled.div`
     display: grid;
@@ -97,7 +100,6 @@ export const ImgWrap = styled.div`
     margin-left: 2rem;
     overflow: hidden;
     opacity: 1;
-    transition: all 1s ease-in-out;
     &:hover{
         img{
          

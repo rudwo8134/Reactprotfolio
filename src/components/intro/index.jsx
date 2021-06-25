@@ -1,5 +1,7 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Image from '../../images/resume.png'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 import { Column2, Img, ImgWrap,InfoContainer,
   InfoWrapper,
   InfoRow,
@@ -22,19 +24,28 @@ import { Column2, Img, ImgWrap,InfoContainer,
 import {Button} from '../ButtonElement'
 
 
-const Intro = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline,darkText,description,buttonLabel,img,alt}) => {
+const Intro = (props) => {
+    const {dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline,darkText,description,buttonLabel,img,alt} = props
     const [clickpop,setclickpop] = useState(false)
+    const {ScrollYvalue} = props
+    console.log(ScrollYvalue)
     const handlebutton = () =>{
         setclickpop(!clickpop)
     }
+    useEffect(()=>{
+      aos.init({
+          duration:3000
+      })
+      
+  },[])
 
     return (
         <>
-          <InfoContainer lightBg={lightBg} id={id}>
-            <InfoWrapper>
+          <InfoContainer  lightBg={lightBg} id={id}>
+            <InfoWrapper >
             <InfoRow imgStart={imgStart}>
             <Column1>
-            <TextWrapper>
+            <TextWrapper data-aos='fade-left'>
                 <TopLine>{topLinetext}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description} in Canada <CanadaMark/></Subtitle>
@@ -60,7 +71,7 @@ const Intro = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,hea
             </TextWrapper>
             </Column1>
             <Column2>
-            <ImgWrap>
+            <ImgWrap data-aos='fade-right'>
             <Img src={img} alt={alt}/>
             </ImgWrap>
             </Column2>

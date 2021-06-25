@@ -1,5 +1,7 @@
 import Progressbar from '../progressbar/index'
-import React from 'react'
+import React,{useEffect} from 'react'
+import 'aos/dist/aos.css'
+import Aos from 'aos'
 import { Column2, Img, ImgWrap,InfoContainer,
   InfoWrapper,
   InfoRow,
@@ -17,13 +19,20 @@ import {Button} from '../ButtonElement'
 
 
 const InfoSection = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline,darkText,description,buttonLabel,img,alt}) => {
-    return (
+  useEffect(()=>{
+    Aos.init({
+        duration:2000
+    })
+    
+},[]) 
+  return (
         <>
-          <InfoContainer lightBg={lightBg} id={id}>
+          <InfoContainer  lightBg={lightBg} id={id}>
             <InfoWrapper>
             <InfoRow imgStart={imgStart}>
             <Column1>
-            <TextWrapper>
+            <TextWrapper data-aos="flip-right"
+            data-aos-easing="ease-out-cubic" >
              
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SKilllist>Program list 
@@ -41,7 +50,8 @@ const InfoSection = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,
             </TextWrapper>
             </Column1>
             <Column2>
-            <ProgressbarWrapper>
+            <ProgressbarWrapper data-aos="flip-left"
+            data-aos-easing="ease-out-cubic">
             <TopLine>{topLinetext}</TopLine>
             <Progressbar Name='html' percent='70'/>
             <Progressbar Name='css' percent='80'/>

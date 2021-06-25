@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 import * as Skill from './skillselement'
 import School from '../../images/schoollog.png'
 import Company from '../../images/simens.png'
@@ -6,16 +8,22 @@ import Company from '../../images/simens.png'
 
 
 const Skills = () => {
+    useEffect(()=>{
+        aos.init({
+            duration:2000
+        })
+        
+    },[])
     return (
         <>
-          <Skill.InfoContainer id='skills'>
-            <Skill.InfoWrapper>
-            <Skill.InfoTextcontainer>
+          <Skill.InfoContainer id='skills' >
+            <Skill.InfoWrapper >
+            <Skill.InfoTextcontainer data-aos='fade-left' data-aos-duration='1000'>
                 <Skill.InfoTextTitle>Skills</Skill.InfoTextTitle>
                 <Skill.IntroHeading>Skills and Education</Skill.IntroHeading>
                 <Skill.InfoTextSub>My name is Eric, shin. I have passion to build the code on the front-end side. I have a Advanced-diploma on Cenetennial college. I have many expriences on the workplace. I was recently working in Siemens. So I had a lot of chances to get Experiences about electronics and software.</Skill.InfoTextSub>
             </Skill.InfoTextcontainer>
-            <Skill.Infrologocontainer>
+            <Skill.Infrologocontainer data-aos='fade-right'>
             <Skill.IntroAllcoverLogo>
             <Skill.IntroLogocover>
             <Skill.LogoJS/>
@@ -41,7 +49,7 @@ const Skills = () => {
             <Skill.IntroLogop>Firebase, Mongo DB, Express</Skill.IntroLogop>
             </Skill.IntroAllcoverLogo>
             </Skill.Infrologocontainer>
-            <Skill.SchoolContainer>
+            <Skill.SchoolContainer data-aos='fade-down-left'>
             <Skill.Schoolcontainercover>
                 <Skill.Schoolbannerconainer>
                 <Skill.Schoolbanner src={School}/>

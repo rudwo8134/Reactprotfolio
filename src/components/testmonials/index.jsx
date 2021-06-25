@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Image from '../../images/personlogo.png'
 import { InfoContainer,
   InfoWrapper,
@@ -12,18 +12,28 @@ import { InfoContainer,
   Namevalue,
   Namevalue2
 } from './testmonials'
+import 'aos/dist/aos.css'
+import Aos from 'aos'
 
 
 
 const Testmonials = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,id,headline,darkText,description,buttonLabel,img,alt}) => {
+    useEffect(()=>{
+        Aos.init({
+            duration:2000
+        })
+        
+    },[]) 
     return (
         <>
           <InfoContainer lightBg={lightBg} id='testmonials'>
             <InfoWrapper>
             <Testmonialsdiv>
             <TopLine>Testmonials</TopLine>
-            <Heading lightText='true'>Comment to Eric</Heading>
-            <Commentdiv>
+            <Heading data-aos="flip-right"
+            data-aos-easing="ease-out-cubic" lightText='true'>Comment to Eric</Heading>
+            <Commentdiv data-aos="zoom-in-left"
+            data-aos-easing="ease-out-cubic">
             <Commentimgdiv right='true'>
             <Commentimg src={Image}/>
             </Commentimgdiv>
@@ -34,7 +44,8 @@ const Testmonials = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,
             
             </Commentp>
             </Commentdiv>
-            <Commentdiv>
+            <Commentdiv data-aos="zoom-in-right"
+            data-aos-easing="ease-out-cubic">
             <Commentimgdiv >
             <Commentimg src={Image}/>
             </Commentimgdiv>

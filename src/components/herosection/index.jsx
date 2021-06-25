@@ -37,7 +37,7 @@ const HeroSection = ({ScrollYvalue}) => {
           now, it is good time to hire
         </HeroP>
         <HeroBtnWrapper>
-        <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}
+        <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}
           primary='true'
           dark='true'
         >

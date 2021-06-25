@@ -19,6 +19,13 @@ export const InfoWrapper = styled.div `
     padding: 0 24px;
     justify-content: center;
     flex-direction: column;
+    [data-aos="example-anim2"] {
+  background: red;
+  transition-property: background;
+  &.aos-animate {
+    background: green;
+  }
+}
 `
 export const InfoTextcontainer= styled.div`
     width: 100%;
