@@ -1,6 +1,4 @@
-import Image from '../../images/1.svg'
-import Image1 from '../../images/1-1.svg'
-import Image2 from '../../images/1-2.svg'
+
 import Introimage from '../../images/intro.png'
 
 export const introObjOne = {
@@ -30,7 +28,7 @@ export const HomeObjOne = {
     description: 'Software Enginner (Front-End)',
     buttonLabel: 'get started',
     imgStart: false,
-    img: Image,
+  
     alt: 'career',
     dark:true,
     dark2: true,
@@ -47,7 +45,7 @@ export const HomeObjTwo = {
     description: 'Tool List',
     buttonLabel: 'Learn more',
     imgStart: true,
-    img: Image1,
+
     alt: 'career',
     dark:true,
     dark2: false,
@@ -64,7 +62,7 @@ export const HomeObjthree = {
     description: 'it is reall nice website. try it!!',
     buttonLabel: 'get started',
     imgStart: false,
-    img: Image2,
+
     alt: 'career',
     dark:false,
     dark2: false,
