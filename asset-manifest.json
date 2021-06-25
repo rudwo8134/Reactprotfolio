@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Reactprotfolio/static/css/main.409b94e9.chunk.css",
-    "main.js": "/Reactprotfolio/static/js/main.dea45f53.chunk.js",
-    "main.js.map": "/Reactprotfolio/static/js/main.dea45f53.chunk.js.map",
+    "main.js": "/Reactprotfolio/static/js/main.f259bdf9.chunk.js",
+    "main.js.map": "/Reactprotfolio/static/js/main.f259bdf9.chunk.js.map",
     "runtime-main.js": "/Reactprotfolio/static/js/runtime-main.2ed31216.js",
     "runtime-main.js.map": "/Reactprotfolio/static/js/runtime-main.2ed31216.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/Reactprotfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -12,9 +12,6 @@
     "static/css/2.7fc9bc2b.chunk.css.map": "/Reactprotfolio/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.409b94e9.chunk.css.map": "/Reactprotfolio/static/css/main.409b94e9.chunk.css.map",
     "static/js/2.624ac1df.chunk.js.LICENSE.txt": "/Reactprotfolio/static/js/2.624ac1df.chunk.js.LICENSE.txt",
-    "static/media/1-1.754f5b08.svg": "/Reactprotfolio/static/media/1-1.754f5b08.svg",
-    "static/media/1-2.aee9cb1e.svg": "/Reactprotfolio/static/media/1-2.aee9cb1e.svg",
-    "static/media/1.ae5cd738.svg": "/Reactprotfolio/static/media/1.ae5cd738.svg",
     "static/media/Pexels Videos 1550080.d0983398.mp4": "/Reactprotfolio/static/media/Pexels Videos 1550080.d0983398.mp4",
     "static/media/intro.43bf4859.png": "/Reactprotfolio/static/media/intro.43bf4859.png",
     "static/media/personlogo.667fabbf.png": "/Reactprotfolio/static/media/personlogo.667fabbf.png",
@@ -33,6 +30,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.624ac1df.chunk.js",
     "static/css/main.409b94e9.chunk.css",
-    "static/js/main.dea45f53.chunk.js"
+    "static/js/main.f259bdf9.chunk.js"
   ]
 }
