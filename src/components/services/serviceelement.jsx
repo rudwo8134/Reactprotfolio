@@ -6,14 +6,13 @@ export const ServicesContainer = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #010606;
-    height: 1300px;
     padding-bottom: 30rem;
 
     @media screen and (max-width:768px){
-        height: 1100px;
+        height: 2000px;
     }
     @media screen and (max-width:480px){
-        height: 1300px;
+        height: 2400px;
     }
 `
 export const TotalProject = styled.span`
@@ -79,6 +78,10 @@ transition: all 0.5s ease-in-out;
     background: #013341;
     color: white;
 }
+@media screen and (max-width:768px){
+       width: 3.2rem;
+       font-size: .7rem;
+    }
 `
 export const Linktag = styled.a``
 

@@ -19,6 +19,9 @@ export const InfoWrapper = styled.div `
     padding: 0 24px;
     justify-content: center;
     flex-direction: column;
+    @media screen and (max-width: 768px){
+        height: 2000px;
+    }
     [data-aos="example-anim2"] {
   background: red;
   transition-property: background;
@@ -79,6 +82,10 @@ display:flex;
 flex-direction: column;
 width: 33%;
 align-items: center;
+@media screen and (max-width: 768px){
+        margin-bottom: 2rem;
+        width: 100%;
+    }
 `
 export const IntroLogocover= styled.div`
 width: 170px;
@@ -93,6 +100,8 @@ justify-content: center;
     transform: scale(1.2) rotate(20deg);
     color: #469c78;
 }
+
+
 
 `
 export const LogoReact = styled(FaReact)`
@@ -120,6 +129,9 @@ font-size: 16px;
     margin-bottom: 16px;
     text-align: center;
     margin:16px 0;
+
+
+    
 `
 export const IntroLogop=styled.p`
     max-width: 33%;
@@ -137,6 +149,9 @@ export const SchoolContainer = styled.div`
     justify-content: center;
     align-items: flex-start;
     margin-top:3rem;
+    @media screen and (max-width: 768px){
+       padding:0;
+    }
 `
 export const Schoolcontainercover = styled.div`
 display:flex;
@@ -156,6 +171,10 @@ margin-right: 2rem;
 &:hover img{
     transform: scale(1.2);
 }
+@media screen and (max-width: 768px){
+     
+        flex:1
+    }
 `
 export const Schoolbanner=styled.img`
 width: 100%;
@@ -167,6 +186,9 @@ export const Schoolinfocontainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    @media screen and (max-width: 768px){
+       flex:4
+    }
 `
 export const SchoolinfoH3 = styled.h3`
  color:#010606;

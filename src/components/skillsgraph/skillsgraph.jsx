@@ -18,6 +18,11 @@ export const InfoWrapper = styled.div `
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+    @media screen and (max-width: 768px){
+        height: 1600px;
+        padding:0;
+        margin: auto;
+    };
  
 `
 export const InfoRow = styled.div`
@@ -51,7 +56,16 @@ export const TextWrapper = styled.div`
     margin-top:4rem;
 
     @media screen and (max-width: 768px){
-        margin:0;
+        margin:auto;
+        padding:auto;
+        max-width: 580px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom:10rem;
+
+
     }
 `
 export const TopLine = styled.div`
@@ -96,6 +110,11 @@ export const Img = styled.img`
 `
 export const ProgressbarWrapper = styled.div`
     width: 500px;
+    @media screen and (max-width: 768px){
+       width: 300px;
+       margin-bottom: 10rem;
+    }
+    
 `
 
 export const SKilllist = styled.ul`

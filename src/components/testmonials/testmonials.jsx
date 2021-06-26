@@ -19,6 +19,7 @@ export const InfoWrapper = styled.div `
     padding: 0 24px;
     justify-content: center;
     padding-top:17rem;
+
 `
 export const InfoRow = styled.div`
     display: grid;
@@ -68,6 +69,9 @@ export const Heading = styled.h1`
     @media screen and (max-width: 768px){
         font-size: 32px;
     }
+    @media screen and (max-width:464px){
+       font-size: 28px;
+    }
 `
 export const Subtitle = styled.p`
     max-width: 440px;
@@ -99,12 +103,23 @@ justify-content: center;
 align-items: center;
 padding: 1rem;
 flex-direction: column;
+@media screen and (max-width:768px){
+        width: 300px ;
+        flex-direction: column ;
+        font-size: 24px;
+        padding:0;
+    }
+
 `
 export const Commentdiv= styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 3rem;
+    @media screen and (max-width:768px){
+        width: 300px ;
+        flex-direction: column ;
+    }
    
 `
 export const Commentimgdiv = styled.div`
@@ -118,6 +133,14 @@ export const Commentimgdiv = styled.div`
     border-radius: 50%;
     margin-left: ${({right})=>(right ? '3rem' : '')};
     order:${({right})=>(right ? '5' : '')};
+
+    @media screen and (max-width:768px){
+        width: 6rem ;
+        height: 6rem;
+        order: 5;
+        margin:0;
+    }
+  
   
     &:hover img{
         transform: scale(1.2);
@@ -130,6 +153,10 @@ export const Commentimg = styled.img`
     margin-top: 1.5rem;
     width: 12rem;
     height: 12rem;
+    @media screen and (max-width:768px){
+        width: 6rem ;
+        height: 6rem;
+    }
 `
 export const Commentp = styled.p`
     display: flex;
@@ -143,6 +170,15 @@ export const Commentp = styled.p`
     height: 10rem;
     font-size: 1rem;
     border-radius: 30px;
+    @media screen and (max-width:768px){
+        width: 15rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        padding:1rem;
+   
+    }
 `
 export const Namevalue = styled.span`
     margin-top: 1rem;

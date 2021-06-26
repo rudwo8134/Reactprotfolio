@@ -43,7 +43,7 @@ const Intro = (props) => {
             <InfoWrapper >
             <InfoRow imgStart={imgStart}>
             <Column1>
-            <TextWrapper data-aos='fade-left'>
+            <TextWrapper data-aos='fade-up'>
                 <TopLine>{topLinetext}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description} in Canada <CanadaMark/></Subtitle>

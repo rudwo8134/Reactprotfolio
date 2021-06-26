@@ -21,19 +21,16 @@ function Sidabar({isOpen,toggle}) {
           <SidebarLink onClick={toggle} to='about'>
             About
           </SidebarLink>
-          <SidebarLink onClick={toggle} to='discover'>
-            Discover
+          <SidebarLink onClick={toggle} to='skills'>
+          Skills
           </SidebarLink>
           <SidebarLink onClick={toggle} to='services'>
-            Services
+          Projects
           </SidebarLink>
-          <SidebarLink onClick={toggle} to='signup'>
-            Signup
+          <SidebarLink onClick={toggle} to='testmonials'>
+          Testmonials
           </SidebarLink>
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute onClick={toggle} to='/'>Sign In</SidebarRoute>
-        </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   )
