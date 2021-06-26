@@ -25,7 +25,7 @@ const HeroSection = ({ScrollYvalue}) => {
   return (
     <HeroContainer>
       <HeroBg scroll={ScrollYvalue}>
-        <VideoBg src={Video} autoPlay loop muted type='video/mp4'/>
+        <VideoBg playsInline src={Video} autoPlay loop muted type='video/mp4'/>
           <Mousecontainer>
         <Mouse></Mouse>
         </Mousecontainer>
