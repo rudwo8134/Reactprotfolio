@@ -31,10 +31,9 @@ const HeroSection = ({ScrollYvalue}) => {
         </Mousecontainer>
         </HeroBg>
       <HeroContent scroll={ScrollYvalue}>
-        <HeroH1>Eric is  developer</HeroH1>
+        <HeroH1>Eric is Front-End Developer</HeroH1>
         <HeroP>
-          Let's talk with Eric. and then see the how to hire hime.
-          now, it is good time to hire
+          Let's Watch Eric's Portfolio. Make it easy and Make an awesome website with current tech
         </HeroP>
         <HeroBtnWrapper>
         <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}
