@@ -1,20 +1,22 @@
 import React,{useState} from 'react'
 import Video from '../../video/production ID_4331635.mp4'
 import {Button} from '../../components/ButtonElement'
+import Typical from 'react-typical'
 import {
   HeroContainer,
   HeroBg,
   VideoBg,
   HeroContent,
-  HeroH1,
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
   Mouse,
   Mousecontainer,
-  Herobottom
-
+  Herobottom,
+  Statictext,
+  Variabletext,
+  WrapperText
 
 } from './heroelement'
 const HeroSection = ({ScrollYvalue}) => {
@@ -32,8 +34,20 @@ const HeroSection = ({ScrollYvalue}) => {
         <Mouse></Mouse>
         </Mousecontainer>
         </HeroBg>
-      <HeroContent scroll={ScrollYvalue}>
-        <HeroH1>Eric is Front-End Developer</HeroH1>
+      <HeroContent scroll={ScrollYvalue} loop={true}>
+        <WrapperText>
+          <Statictext>
+            Hello, I am
+          </Statictext>
+          <Variabletext 
+          strings={[
+                    'Eric Shin','Front-End-Engineer', 'in Canada']}
+                    typeSpeed={80}
+                    backSpeed={80}
+                    loop
+        />
+        </WrapperText>
+      
         <HeroP>
           Let's Watch Eric's Portfolio. Make it easy and Make an awesome website with current tech
         </HeroP>

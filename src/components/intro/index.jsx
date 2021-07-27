@@ -86,7 +86,7 @@ const Intro = (props) => {
                 <Resumeimg src={Image}/>
             </DetailcontentContainer>
             </Detaildiv>
-            <Infobottom/>
+      
           </InfoContainer>  
         </>
     )

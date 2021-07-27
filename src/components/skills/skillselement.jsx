@@ -25,6 +25,8 @@ export const Infobottom = styled.div`
 
 
 export const InfoContainer = styled.div`
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     color: #fff;
     background: #f9f9f9;
     position: relative;

@@ -28,6 +28,9 @@ function Sidabar({isOpen,toggle}) {
           <SidebarLink onClick={toggle} to='testmonials'>
           Testmonials
           </SidebarLink>
+          <SidebarLink onClick={toggle} to='Contact'>
+          Contact
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

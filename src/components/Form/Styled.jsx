@@ -18,36 +18,12 @@ export const Headerspan = styled.span`
   animation: ${contactheader} 2s infinite;
 `
 
-export const Infobottom = styled.div`
-    width: 100%;
-    top: -13%;
-    height: 50vh;
-    z-index: 2;
-    float: left;
-    position: absolute;
-    background: linear-gradient(to bottom, 
-    black 0%, 
-    rgba(0, 0, 0, 0.738) 19%,
-    rgba(0, 0, 0, 0.541) 34%, 
-    rgba(0, 0, 0, 0.382) 47%, 
-    rgba(0, 0, 0, 0.278) 56.5%, 
-    rgba(0, 0, 0, 0.194) 65%, 
-    rgba(0, 0, 0, 0.126) 73%, 
-    rgba(0, 0, 0, 0.075) 80.2%, 
-    rgba(0, 0, 0, 0.042) 86.1%, 
-    rgba(0, 0, 0, 0.021) 91%, 
-    rgba(0, 0, 0, 0.008) 95.2%, 
-    rgba(0, 0, 0, 0.002) 98.2%, transparent 100%);
-`
 
 
 export const InfoContainer = styled.div`
-    background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
-    clip-path: polygon(0 0, 50% 100px, 100% 0, 100% 100%, 0 100%);
-    margin-top: -9rem;
-    padding: 10rem 10rem;
+   background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
     color: #fafafa;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -55,17 +31,17 @@ export const InfoContainer = styled.div`
     position: relative;
     z-index: 1;
     @media screen and (max-width: 768px){
-        padding: 100px 0;
+        padding: 10rem 0;
+    }
+     @media screen and (max-width: 768px){
+        height: 140vh;
     }
 `
 export const InfoWrapper = styled.div `
   width: 70%;
   max-width: 1200px;
-    @media screen and (max-width: 768px){
-        height: 2000px;
-    }
     [data-aos="example-anim2"] {
-  background: red;
+
   transition-property: background;
   &.aos-animate {
     background: green;
@@ -113,6 +89,17 @@ export const Forminput = styled.input`
     ::-webkit-input-placeholder{
     color: #01BF7166;
     font-size: 1rem;
+    @media screen and (max-width: 464px){
+    font-size: .8rem;
+        :focus:invalid{
+        border-bottom: 1p.4x solid red;
+    }
+      ::focus{
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+      border-bottom: 1px solid green;
+    }
+    }
   }
   :placeholder-shown +label{
         visibility: hidden;
@@ -134,6 +121,10 @@ height: 2rem;
 font-size: 1.1rem;
 border-radius: 30px;
 transition: all 0.5s ease-in-out;
+@media screen and (max-width: 464px){
+  padding: 1rem 2rem;
+  font-size: .8rem;
+}
 &.active{
     border-bottom: 1px solid grey ;
     background: #01BF71;
@@ -156,6 +147,10 @@ export const FormLabel = styled.label`
     transition: all .3s;
     color:#01BF71;
     align-self: flex-start;
+      @media screen and (max-width: 464px){
+        font-size: .7rem;
+    }
+    
 `
 export const InfoTextcontainer= styled.div`
     width: 100%;
@@ -167,8 +162,8 @@ export const IntroHeading = styled.h1`
     font-weight: 600;
     color: ${({lightText})=>(lightText ? '#f7f8fa' : '#010606')};
     text-align: center;
-    @media screen and (max-width: 768px){
-        font-size: 32px;
+    @media screen and (max-width: 464px){
+        font-size: 1.5rem;
     }
 `
 export const InfoTextTitle= styled.div`

@@ -4,6 +4,7 @@ export const InfoContainer = styled.div`
 
     color: #fff;
     background: ${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')};
+    height: 100vh;
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
@@ -11,14 +12,15 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div `
     display: grid;
     z-index: 1;
-    height: 900px;
+    height: 100vh;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
     justify-content: center;
-    padding-top:17rem;
+    @media screen and (max-width: 768px){
+        height: 300vh;
+    }
 
 `
 export const InfoRow = styled.div`

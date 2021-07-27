@@ -5,29 +5,6 @@ import {GiCancel} from 'react-icons/gi'
 export const CanadaMark = styled(FaCanadianMapleLeaf)`
 
 `
-
-export const Infobottom = styled.div`
-    width: 100%;
-    bottom: -28%;
-    height: 50vh;
-    z-index: 2;
-    float: left;
-    position: absolute;
-    background: linear-gradient(to bottom, 
-    black 0%, 
-    rgba(0, 0, 0, 0.738) 19%,
-    rgba(0, 0, 0, 0.541) 34%, 
-    rgba(0, 0, 0, 0.382) 47%, 
-    rgba(0, 0, 0, 0.278) 56.5%, 
-    rgba(0, 0, 0, 0.194) 65%, 
-    rgba(0, 0, 0, 0.126) 73%, 
-    rgba(0, 0, 0, 0.075) 80.2%, 
-    rgba(0, 0, 0, 0.042) 86.1%, 
-    rgba(0, 0, 0, 0.021) 91%, 
-    rgba(0, 0, 0, 0.008) 95.2%, 
-    rgba(0, 0, 0, 0.002) 98.2%, transparent 100%);
-`
-
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg})=>(lightBg ? '#f9f9f9' : '#010606')};
@@ -40,14 +17,16 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div `
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 100vh;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
-
+     @media screen and (max-width: 468px){
+        height: 140vh;
+    }
 
 `
 export const InfoRow = styled.div`
@@ -97,12 +76,18 @@ export const Heading = styled.h1`
     @media screen and (max-width: 768px){
         font-size: 32px;
     }
+      @media screen and (max-width: 468px){
+        font-size: 24px;
+    }
 `
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
+       @media screen and (max-width: 468px){
+        font-size: 16px;
+    }
     color: ${({darkText})=>(darkText ? '#010606':'#fff')};
 `
 export const Skills = styled.p`
@@ -110,6 +95,9 @@ export const Skills = styled.p`
     margin-bottom: 35px;
     font-size: 15px;
     line-height: 24px;
+       @media screen and (max-width: 468px){
+        font-size: 12px;
+    }
 `
 export const BtnWrap = styled.div`
     display: flex;

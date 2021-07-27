@@ -3,7 +3,7 @@ import aos from 'aos'
 import 'aos/dist/aos.css'
 import {
   InfoContainer,
-  Infobottom,
+
   InfoWrapper,
   IntroHeading,
   InfoTextTitle,
@@ -26,9 +26,8 @@ const Index = () => {
         
     },[])
   return (
-    <InfoContainer >
-      <Infobottom/>
-      <InfoWrapper id="Contact">
+    <InfoContainer id="Contact">
+      <InfoWrapper   >
         <InfoTextTitle data-aos='fade-right' data-aos-duration='1000'>Contact</InfoTextTitle>
         <IntroHeading data-aos='fade-right' data-aos-duration='1000' lightText><Headerspan>Contact</Headerspan> to Eric</IntroHeading>
         <FormContainer>

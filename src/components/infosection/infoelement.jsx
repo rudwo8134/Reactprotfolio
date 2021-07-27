@@ -20,6 +20,7 @@ export const InfoWrapper = styled.div `
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
 `
 export const InfoRow = styled.div`
     display: grid;

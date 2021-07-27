@@ -92,7 +92,6 @@ const Skills = () => {
             </Skill.SchoolContainer>
             </Skill.InfoWrapper>
             
-            <Skill.Infobottom/>
         </Skill.InfoContainer>  
         </>
     )

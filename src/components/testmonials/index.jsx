@@ -28,7 +28,7 @@ const Testmonials = ({dark2,dark,primary,topLinetext,imgStart,lightBg,lightText,
     return (
         <>
           <InfoContainer lightBg={lightBg} id='testmonials'>
-            <InfoWrapper>
+            <InfoWrapper >
             <Testmonialsdiv>
             <TopLine>Testmonials</TopLine>
             <Heading data-aos="flip-right"

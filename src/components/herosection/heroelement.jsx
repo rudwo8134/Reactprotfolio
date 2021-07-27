@@ -1,26 +1,8 @@
 import styled,{keyframes} from 'styled-components'
 import {MdKeyboardArrowRight,MdArrowForward} from 'react-icons/md'
+import Typical from 'react-typed';
 
 
-const colorchange = keyframes`
-  0% {
-
-  background-image: linear-gradient(0deg, rgba(4,191,113,1) 0%, rgba(0,0,0,0.227328431372549) 100%);
-  }
-  25% {
-
-  background-image: linear-gradient(90deg, rgba(4,191,113,1) 0%, rgba(191,154,4,0.227328431372549) 100%);
-  }
-  50% {
-  background-image: linear-gradient(180deg, rgba(4,191,113,1) 0%, rgba(255,255,255,0.227328431372549) 100%);
-  }
-  75% {
-  background-image-img: linear-gradient(270deg, rgba(4,191,113,1) 0%, rgba(191,154,4,0.227328431372549) 100%);
-  }
-  100% {
-  background-image: linear-gradient(390deg, rgba(4,191,113,1) 0%, rgba(230,230,230,0.227328431372549) 100%);
-  }
-`
 
 const arrowanimation = keyframes`
 
@@ -90,6 +72,11 @@ width: 2.5rem;
 height: 4rem;
 border: 4px solid #fff;
 border-radius: 60px;
+  @media screen and (max-width: 480px){
+      width: 1.2rem;
+      height: 2rem;
+      border: 1px solid #fff;
+    }
 &:before{
   content: '';
   width: 0.2rem;
@@ -112,6 +99,11 @@ border-radius: 60px;
       top:30px;
     }
   }
+    @media screen and (max-width: 480px){
+      width: 0.1rem;
+      height: 1rem;
+    }
+
 }
 `
 
@@ -187,19 +179,91 @@ export const HeroContent = styled.div`
   `};
   opacity: ${({scroll})=>`${1-scroll*0.002}`};
 `
-export const HeroH1 = styled.h1`
-    color:#fff;
-    font-size: 48px;
-    text-align: center;
-    text-transform: uppercase;
-    transform: skewX(-10deg);
-    line-height: 3rem;
-    letter-spacing: 0.2rem;
-    -webkit-background-clip: text;
-    color:transparent;
-    background-clip: text;
-    box-shadow: 0rem 0.5rem 0.5rem rgba(0,0,0,.2);
-    animation: ${colorchange} 5s ease-in-out infinite;
+
+export const WrapperText = styled.div`
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+`
+
+export const Statictext = styled.div`
+color:#fff;
+font-size: 3.0rem;
+font-weight: 400;
+
+ @media screen and (max-width: 768px){
+      font-size: 2.4rem;
+    }
+    @media screen and (max-width: 480px){
+      font-size: 1.2rem;
+    }
+
+`
+export const Variabletext = styled(Typical)`
+color: rgba(4,191,113,1);
+font-size: 3.0rem;
+font-weight: 400;
+margin-left: 2rem;
+
+ @media screen and (max-width: 768px){
+      font-size: 2.4rem;
+    }
+    @media screen and (max-width: 480px){
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    }
+
+`
+
+const typing = keyframes`
+  100%{
+    left:100%;
+    margin: 0 -2rem 0 2rem;
+  }
+`
+
+
+const slide = keyframes`
+  100%{
+    top: -15rem;
+  }
+`
+
+
+export const DinamicText = styled.ul`
+
+  margin-left: 1rem;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: transparent;
+  overflow: hidden;
+
+  li{
+    color: rgba(4,191,113,1);
+    list-style: none;
+    font-size: 3.0rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    position: relative;
+    top:0;
+    animation: ${slide} 5s steps(3) infinite;
+    span{
+      position: relative;
+    }
+    span::after{
+      content:"";
+      position: absolute;
+      left:0;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      border-left: 2px solid rgba(4,191,113,1);
+      animation: ${typing} 1.5s steps(14) infinite;
+    }
+  }
+
     @media screen and (max-width: 768px){
       font-size: 40px;
     }
@@ -219,7 +283,7 @@ export const HeroP = styled.p`
       font-size: 24px;
     }
     @media screen and (max-width: 480px){
-      font-size: 18px;
+      font-size: 0.7rem;
     }
 `
 export const HeroBtnWrapper = styled.div`
