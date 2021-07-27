@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/Reactprotfolio/static/css/main.f95b9bfe.chunk.css",
-    "main.js": "/Reactprotfolio/static/js/main.9828a93c.chunk.js",
-    "main.js.map": "/Reactprotfolio/static/js/main.9828a93c.chunk.js.map",
+    "main.js": "/Reactprotfolio/static/js/main.f2121cd3.chunk.js",
+    "main.js.map": "/Reactprotfolio/static/js/main.f2121cd3.chunk.js.map",
     "runtime-main.js": "/Reactprotfolio/static/js/runtime-main.2ed31216.js",
     "runtime-main.js.map": "/Reactprotfolio/static/js/runtime-main.2ed31216.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/Reactprotfolio/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.f7f35872.chunk.js": "/Reactprotfolio/static/js/2.f7f35872.chunk.js",
-    "static/js/2.f7f35872.chunk.js.map": "/Reactprotfolio/static/js/2.f7f35872.chunk.js.map",
+    "static/js/2.e447c9f8.chunk.js": "/Reactprotfolio/static/js/2.e447c9f8.chunk.js",
+    "static/js/2.e447c9f8.chunk.js.map": "/Reactprotfolio/static/js/2.e447c9f8.chunk.js.map",
     "index.html": "/Reactprotfolio/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/Reactprotfolio/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.f95b9bfe.chunk.css.map": "/Reactprotfolio/static/css/main.f95b9bfe.chunk.css.map",
-    "static/js/2.f7f35872.chunk.js.LICENSE.txt": "/Reactprotfolio/static/js/2.f7f35872.chunk.js.LICENSE.txt",
+    "static/js/2.e447c9f8.chunk.js.LICENSE.txt": "/Reactprotfolio/static/js/2.e447c9f8.chunk.js.LICENSE.txt",
     "static/media/AvatarMaker-2.0f62d74a.png": "/Reactprotfolio/static/media/AvatarMaker-2.0f62d74a.png",
     "static/media/AvatarMaker.3e524bb3.png": "/Reactprotfolio/static/media/AvatarMaker.3e524bb3.png",
-    "static/media/berkay-gumustekin-hRg1KL4-AUE-unsplash.5cb629f2.jpg": "/Reactprotfolio/static/media/berkay-gumustekin-hRg1KL4-AUE-unsplash.5cb629f2.jpg",
     "static/media/intro.43bf4859.png": "/Reactprotfolio/static/media/intro.43bf4859.png",
     "static/media/production ID_4331635.de5aacf5.mp4": "/Reactprotfolio/static/media/production ID_4331635.de5aacf5.mp4",
     "static/media/project1.f41fe491.png": "/Reactprotfolio/static/media/project1.f41fe491.png",
@@ -30,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ed31216.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.f7f35872.chunk.js",
+    "static/js/2.e447c9f8.chunk.js",
     "static/css/main.f95b9bfe.chunk.css",
-    "static/js/main.9828a93c.chunk.js"
+    "static/js/main.f2121cd3.chunk.js"
   ]
 }
