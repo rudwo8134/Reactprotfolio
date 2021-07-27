@@ -20,7 +20,6 @@ import { Column2, Img, ImgWrap,InfoContainer,
   DetailText,
   DetailSub,
   Resumeimg,
-  Infobottom
 } from './introelement'
 import {Button} from '../ButtonElement'
 

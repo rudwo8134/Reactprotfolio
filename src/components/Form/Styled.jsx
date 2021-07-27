@@ -1,6 +1,5 @@
 import styled,{keyframes} from 'styled-components'
-import {FaReact,FaHtml5,FaNode} from 'react-icons/fa'
-import image from '../../images/berkay-gumustekin-hRg1KL4-AUE-unsplash.jpg'
+
 
 const contactheader = keyframes`
 0%{

@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import Video from '../../video/production ID_4331635.mp4'
 import {Button} from '../../components/ButtonElement'
-import Typical from 'react-typical'
+
+
 import {
   HeroContainer,
   HeroBg,
