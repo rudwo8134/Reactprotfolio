@@ -12,9 +12,11 @@ import Skills from '../components/skills'
 import SkillsGraph from '../components/skillsgraph'
 import Testmonials from '../components/testmonials'
 import Contact from '../components/Form/index'
+import LoadingPage from '../components/Loading/LoadingPage'
 
 const Home = () => {
   const [isOpen, setisOpen] = useState(false)
+  const [loading, setloading] = useState(true)
 
   const toggle = () =>{
     setisOpen(!isOpen)
@@ -27,10 +29,16 @@ const Home = () => {
   
   useEffect(() => {
     window.addEventListener('scroll',Handlescroll)
+    setTimeout(()=>setloading(false), 3000);
     return () => {
       window.removeEventListener('scroll',Handlescroll)
     }
   }, [])
+
+
+  if(loading){
+    return <LoadingPage />;
+  }
 
   return (
     <Router>
