@@ -37,16 +37,16 @@ const Skills = () => {
                 <Skill.LogoReact/>
             </Skill.IntroLogocover>
             <Skill.IntroLogoH1>FrameWork</Skill.IntroLogoH1>
-            <Skill.IntroLogop>React,Redux
-            Redux-saga, GraphQL & Apollo</Skill.IntroLogop>
+            <Skill.IntroLogop>React (Redux
+            Redux-saga, GraphQL & Apollo)</Skill.IntroLogop>
             </Skill.IntroAllcoverLogo>
 
             <Skill.IntroAllcoverLogo>
             <Skill.IntroLogocover>
                 <Skill.Logonode/>
             </Skill.IntroLogocover>
-            <Skill.IntroLogoH1>Server</Skill.IntroLogoH1>
-            <Skill.IntroLogop>Firebase, Mongo DB, Express</Skill.IntroLogop>
+            <Skill.IntroLogoH1>DB/Server</Skill.IntroLogoH1>
+            <Skill.IntroLogop>Firebase, Mongo DB  /express</Skill.IntroLogop>
             </Skill.IntroAllcoverLogo>
             </Skill.Infrologocontainer>
             <Skill.SchoolContainer data-aos='zoom-in' >
@@ -85,7 +85,7 @@ const Skills = () => {
     <Skill.Schoolbanner src={Company}/>
     </Skill.Schoolbannerconainer>
     <Skill.Schoolinfocontainer>
-    <Skill.SchoolinfoH3>Electronics Technician(FA)</Skill.SchoolinfoH3>
+    <Skill.SchoolinfoH3>Telecommunication Technician(FA)</Skill.SchoolinfoH3>
     <Skill.Schoolinfoh5>2020,September - 2021,April</Skill.Schoolinfoh5>
     </Skill.Schoolinfocontainer>
 </Skill.Schoolcontainercover>
