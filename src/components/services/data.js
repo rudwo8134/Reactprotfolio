@@ -5,6 +5,7 @@ import Porject4 from '../../images/project4.png'
 import Porject7 from '../../images/project7.png'
 import Porject6 from '../../images/project6.png'
 import Project8 from '../../images/project8.png'
+import Project9 from '../../images/project9.png';
 
 
 export const Project1 = [
@@ -13,6 +14,13 @@ export const Project1 = [
     skill: 'React, Material UI',
     img: Project8,
     url: 'https://rudwo8134.github.io/ArcDevelopment/',
+    type: 'react backend',
+  },
+  {
+    title: 'Simple recipe',
+    skill: 'NextJS Graphql',
+    img: Project9,
+    url: 'https://ericrecipes.netlify.app/',
     type: 'react backend',
   },
   {
