@@ -38,57 +38,64 @@ const Intro = (props) => {
   },[])
 
     return (
-        <>
-          <InfoContainer  lightBg={lightBg} id={id}>
-            <InfoWrapper >
+      <>
+        <InfoContainer lightBg={lightBg} id={id}>
+          <InfoWrapper>
             <InfoRow imgStart={imgStart}>
-            <Column1>
-            <TextWrapper data-aos='fade-up'>
-                <TopLine>{topLinetext}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description} in Canada <CanadaMark/></Subtitle>
-                <Skills>
-                I have passion to build the code on the front-end side.
-                I have a Advanced-diploma on Cenetennial college. 
-                I have many expriences on the workplace. 
-                I was recently worked in Siemens. So I had a lot of chances to get Experiences about electronics and software.
-                </Skills>
-                <BtnWrap>
-                    <Button 
-                    onClick={handlebutton}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark = {dark ? 1 : 0}
-                    dark2 = {dark2 ? 1 : 0}
-                    to='home'>Watch Resume</Button>
-                </BtnWrap>
-            </TextWrapper>
-            </Column1>
-            <Column2>
-            <ImgWrap data-aos='fade-right'>
-            <Img src={img} alt={alt}/>
-            </ImgWrap>
-            </Column2>
+              <Column1>
+                <TextWrapper data-aos="fade-up">
+                  <TopLine>{topLinetext}</TopLine>
+                  <Heading lightText={lightText}>{headline}</Heading>
+                  <Subtitle darkText={darkText}>
+                    {description} in Canada <CanadaMark />
+                  </Subtitle>
+                  <Skills>
+                    I have passion to build the code on the front-end side. I
+                    have a Advanced-diploma on Cenetennial college. I have many
+                    expriences on the workplace. I was recently worked in
+                    Siemens. So I had a lot of chances to get Experiences about
+                    electronics and software.
+                  </Skills>
+                  <BtnWrap>
+                    <Button
+                      onClick={handlebutton}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                      to="home"
+                    >
+                      Watch Resume
+                    </Button>
+                  </BtnWrap>
+                </TextWrapper>
+              </Column1>
+              <Column2>
+                <ImgWrap data-aos="fade-right">
+                  <Img src={img} alt={alt} />
+                </ImgWrap>
+              </Column2>
             </InfoRow>
-            </InfoWrapper>
-            <Detaildiv offset={-80} show={clickpop} >
-            <Detailcacelbutton onClick={handlebutton}/>
+          </InfoWrapper>
+          <Detaildiv offset={-80} show={clickpop}>
+            <Detailcacelbutton onClick={handlebutton} />
             <DetailcontentContainer>
-                <DetailText>
+              <DetailText>
                 <DetailHeader>Resume</DetailHeader>
-                <DetailSub href='https://docs.google.com/document/d/1R_ddsBG6n_OYaVIDmwQHuODCGB9VAbYdsRh6gpCrURc/export?format=pdf'>Click to download</DetailSub>
-                </DetailText>
-                <Resumeimg src={Image}/>
+                <DetailSub href="https://drive.google.com/file/d/1nt8QIR-231gY3SQ3lnO75d3pnKW1QI_I/edit?format=pdf">
+                  Click to download
+                </DetailSub>
+              </DetailText>
+              <Resumeimg src={Image} />
             </DetailcontentContainer>
-            </Detaildiv>
-      
-          </InfoContainer>  
-        </>
-    )
+          </Detaildiv>
+        </InfoContainer>
+      </>
+    );
 }
 
 export default Intro
