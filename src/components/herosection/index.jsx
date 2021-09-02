@@ -40,7 +40,7 @@ const HeroSection = ({ScrollYvalue}) => {
           <Statictext>
             Hello, I am
           </Statictext>
-          <Variabletext 
+          <Variabletext
           strings={[
                     'Eric Shin','Front-End-Engineer', 'in Canada']}
                     typeSpeed={80}

@@ -190,14 +190,14 @@ export const WrapperText = styled.div`
 
 export const Statictext = styled.div`
 color:#fff;
-font-size: 3.0rem;
+font-size: 2.5rem;
 font-weight: 400;
 
  @media screen and (max-width: 768px){
       font-size: 2.4rem;
     }
     @media screen and (max-width: 480px){
-      font-size: 1.2rem;
+      font-size: 1.0rem;
     }
 
 `
@@ -211,7 +211,7 @@ margin-left: 2rem;
       font-size: 2.4rem;
     }
     @media screen and (max-width: 480px){
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       margin-left: 0.5rem;
     }
 
