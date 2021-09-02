@@ -187,26 +187,33 @@ justify-content: flex-start;
 margin-bottom: 2rem;
 `
 export const Schoolbannerconainer = styled.div`
-width:8rem;
-height: 4rem;
-display: flex;
-justify-content: center;
-align-items: center;
-overflow:hidden;
-margin-right: 2rem;
-&:hover img{
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 2rem;
+  &:hover img {
     transform: scale(1.2);
-}
-@media screen and (max-width: 768px){
-     
-        flex:1
-    }
-`
-export const Schoolbanner=styled.img`
-width: 100%;
-height:  100%;
-transition: all 0.5s ease-in-out;
-`
+  }
+  @media screen and (max-width: 768px) {
+    flex: 1;
+  }
+  @media screen and (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+`;
+export const Schoolbanner = styled.img`
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  @media screen and (max-width: 768px) {
+  width: 50px;
+  height: 50px;
+  }
+`;
 export const Schoolinfocontainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -221,6 +228,7 @@ export const SchoolinfoH3 = styled.h3`
  text-align: start;
 `
 export const Schoolinfoh5 = styled.p`
-    color:#5F6262;
-`
+  color: #5f6262;
+  
+`;
 

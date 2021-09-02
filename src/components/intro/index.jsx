@@ -86,7 +86,7 @@ const Intro = (props) => {
             <DetailcontentContainer>
               <DetailText>
                 <DetailHeader>Resume</DetailHeader>
-                <DetailSub href="https://drive.google.com/file/d/1nt8QIR-231gY3SQ3lnO75d3pnKW1QI_I/edit?format=pdf">
+                <DetailSub href="https://drive.google.com/file/d/1M74o5Br7J5yU-4bhRwMCPFYNOEmR4F4l/view?usp=sharing">
                   Click to download
                 </DetailSub>
               </DetailText>
