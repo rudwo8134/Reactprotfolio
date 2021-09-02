@@ -10,6 +10,13 @@ import Project9 from '../../images/project9.png';
 
 export const Project1 = [
   {
+    title: 'Development with Nextjs',
+    skill: 'NextJS, Material UI, SEO, Cross-Browser support',
+    img: Project8,
+    url: 'https://61302c19c2b87e0efac6325a--gifted-wiles-a7b491.netlify.app/',
+    type: 'react backend',
+  },
+  {
     title: 'Arc development',
     skill: 'React, Material UI',
     img: Project8,
