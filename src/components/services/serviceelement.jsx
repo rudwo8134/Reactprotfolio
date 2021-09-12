@@ -13,6 +13,7 @@ export const ServicesContainer = styled.div`
         padding-top: 40rem;
     }
     @media screen and (max-width:480px){
+        padding-top: 80rem;
         height: 2400px; 
     }
 `
