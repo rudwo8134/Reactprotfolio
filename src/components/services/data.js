@@ -6,9 +6,18 @@ import Porject7 from '../../images/project7.png'
 import Porject6 from '../../images/project6.png'
 import Project8 from '../../images/project8.png'
 import Project9 from '../../images/project9.png';
+import Project10 from '../../images/project10.png';
 
 
 export const Project1 = [
+  {
+    title: 'Speer Skill test',
+    skill: 'React, Sass, Css Effect, Form validation, music,',
+    img: Project10,
+    url: 'https://rudwo8134.github.io/Speerproejct/#/',
+    type: 'react',
+  },
+
   {
     title: 'Development with Nextjs',
     skill: 'NextJS, Material UI, SEO, Cross-Browser support',
