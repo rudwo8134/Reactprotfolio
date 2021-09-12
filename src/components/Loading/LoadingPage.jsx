@@ -7,9 +7,12 @@ const animation = keyframes`
   opacity: 0;
   font-size:1rem;
   transform: translateY(200px);
-  @media (max-width: 480px) {
-      font-size: 0.5rem;
+  @media screen and (max-width: 768px) {
+      font-size: 0.7rem;
       letter-spacing: 0.1em;
+    }
+  @media screen and (max-width: 480px) {
+      font-size: 1rem;
     }
 }
 100%{
@@ -33,9 +36,14 @@ const Wrapper = styled.div`
     text-transform: uppercase;
     margin-left: 2rem;
     animation: ${animation} 3s infinite;
-    @media (max-width: 480px) {
-      font-size: 0.8rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
       letter-spacing: 0.1em;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+      letter-spacing: none;
+      margin-left: 1rem;
     }
   }
 `;

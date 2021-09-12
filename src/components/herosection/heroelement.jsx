@@ -178,6 +178,7 @@ export const HeroContent = styled.div`
   
   `};
   opacity: ${({scroll})=>`${1-scroll*0.002}`};
+
 `
 
 export const WrapperText = styled.div`
@@ -185,7 +186,6 @@ export const WrapperText = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 `
 
 export const Statictext = styled.div`

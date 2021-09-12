@@ -14,21 +14,23 @@ export const InfoContainer = styled.div`
     position: relative;
     
 `
-export const InfoWrapper = styled.div `
-    display: grid;
-    z-index: 1;
-    height: 100vh;
-    width: 100%;
-    max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 24px;
-    justify-content: center;
-     @media screen and (max-width: 468px){
-        height: 140vh;
-    }
-
-`
+export const InfoWrapper = styled.div`
+  display: grid;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    height: 135vh;
+  }
+  @media screen and (max-width: 468px) {
+    height: 140vh;
+  }
+`;
 export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto,1fr);
