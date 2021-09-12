@@ -11,13 +11,12 @@ import Project10 from '../../images/project10.png';
 
 export const Project1 = [
   {
-    title: 'Speer Skill test',
-    skill: 'React, Sass, Css Effect, Form validation, music,',
+    title: 'Speer test',
+    skill: 'React, Css Design, Styled-components, form validation',
     img: Project10,
     url: 'https://rudwo8134.github.io/Speerproejct/#/',
     type: 'react',
   },
-
   {
     title: 'Development with Nextjs',
     skill: 'NextJS, Material UI, SEO, Cross-Browser support',
